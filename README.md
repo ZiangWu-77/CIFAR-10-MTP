@@ -106,4 +106,4 @@ torch.cuda.memory._dump_snapshot("my_snapshot.pickle")
 ## Thanks to🤗
 本工作是在 https://github.com/kuangliu/pytorch-cifar.git 的基础上进行改进而来的，感谢该工作的贡献，使得整个实验过程比较顺利，能够较为高效地完成不同精度的性能对比测试。
 ## Appendix
-`本项目完整代码也开源在了github上，若文件有缺失可能是被误删或者遗漏了，在github上能找到完整的版本。`
+`本项目完整代码也开源在了github上，项目地址是：https://github.com/ZiangWu-77/CIFAR-10-MTP/tree/main，若文件有缺失可能是被误删或者遗漏了，在github上能找到完整的版本。`
