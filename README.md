@@ -8,6 +8,7 @@
 ├── data
 ├── demo.ipynb
 ├── main.py
+├── mem_fp32.png
 ├── models
 ├── README.md
 ├── requirements.txt
@@ -100,7 +101,7 @@ run_your_code()
 torch.cuda.memory._dump_snapshot("my_snapshot.pickle")
 ```
 得到pickle文件之后，可访问https://pytorch.org/memory_viz对内存进行可视化分析，可以得到类似于下图：
-
+![alt text](mem_fp32.png)
 ## 可视化时间
 这里对时间上的处理比较简单，直接测量了从开始训练到结束训练的总时长，实际其中还包括了每个epoch训练后的test时间，但是由于是公平对比，可以粗略的作为训练速度的参考。时间是直接被log在results的.log文件中的，可以在网盘中看到。
 ## demo 
