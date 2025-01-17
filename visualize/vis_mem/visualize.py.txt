@@ -1,0 +1,35 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+# 数据
+batch_sizes = ['256', '128', '64']
+fp32 = [1956, 1371, 1060]
+fp16 = [1143, 904, 789]
+bf16 = [1143, 904, 789]
+fp16_amp = [1264, 1062, 943]
+bf16_amp = [1264, 1062, 943]
+
+# 位置设置
+x = np.arange(len(batch_sizes))  # 三个batch的x位置
+width = 0.1  # 柱子的宽度
+
+# 创建柱状图
+fig, ax = plt.subplots(figsize=(10, 6))
+
+bars_fp32 = ax.bar(x - 2*width, fp32, width, label='fp32')
+bars_fp16 = ax.bar(x - width, fp16, width, label='fp16')
+bars_bf16 = ax.bar(x, bf16, width, label='bf16')
+bars_fp16_amp = ax.bar(x + width, fp16_amp, width, label='fp16+amp')
+bars_bf16_amp = ax.bar(x + 2*width, bf16_amp, width, label='bf16+amp')
+
+# 标签、标题等
+ax.set_xlabel('Batch Size')
+ax.set_ylabel('Value')
+ax.set_title('Comparison of Different Precision and AMP Configurations')
+ax.set_xticks(x)
+ax.set_xticklabels(batch_sizes)
+ax.legend()
+
+# 显示图形
+plt.tight_layout()
+plt.show()
