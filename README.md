@@ -26,7 +26,7 @@
 - vgg_train 文件夹放置了所写的训练脚本，之所以每种精度的模型分开写是为了方便在多卡上并行测试提升速度。
 - visualization 文件主要维护了可视化的文件，用于处理生成的日志文件并绘制test和train过程中的loss和accuracy曲线图、显存占用图等。
 对应的文件
-⚡ 本项目提供了所有实验过程中产生的权重文件（不同batch-size不同精度）以及训练过程中产生的log文件，可以在：上下载以进行快速的可视化，当然也可以运行demo.ipynb脚本可视化你自己的训练⚡
+⚡ 本项目提供了所有实验过程中产生的权重文件（不同batch-size不同精度）以及训练过程中产生的log文件，可以在网盘上下载以进行快速的可视化，当然也可以运行demo.ipynb脚本可视化你自己的训练⚡
 - 训练过程中产生的log文件（用于绘制loss和acc）链接: https://pan.baidu.com/s/1bavVdTCP-BzFcTrkJOm0Iw?pwd=mfdz 提取码: mfdz 
 - 训练过程中各精度各batch大小的权重文件 链接: https://pan.baidu.com/s/1-MmNhlzux4detnhHZ2Iwrg?pwd=hvnx 提取码: hvnx
 ## Env setup
